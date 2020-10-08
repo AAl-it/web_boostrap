@@ -1,0 +1,150 @@
+/*Estils Generals*/
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/*Navegacio*/
+
+.navbar {
+  background-color: transparent;
+}
+
+#navMain .navbar-toggler {
+  color: #fff;
+  border: none;
+  font-size: 25px;
+}
+
+#navMain .navbar-brand {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#navMain .navbar-nav > li > a {
+  font-size: 0.7rem;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+}
+
+#navMain .navbar-nav > li > a:hover {
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #navMain .navbar-nav > li > a {
+    font-size: 1rem;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-weight: 600;
+  }
+
+  #navMain .navbar-nav > li > a:hover {
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+  }
+
+  #navMain .navbar-toggler {
+    color: #000;
+    border: none;
+    font-size: 25px;
+  }
+  #navMain .navbar-brand {
+    color: #000;
+  }
+}
+
+/*Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item:nth-child(1) {
+  background-image: url("../img/isidre_prunes_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../img/Angelica_isidre_prunes_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: url("../img/mar-i-cel-15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*Carousel Text Imatge*/
+.header-content {
+  max-width: 450px;
+  padding-bottom: 40px;
+}
+
+.text-header {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 0.5;
+}
+
+/*Galeria*/
+
+/*.container-fluid {
+  /*height: 100%;
+  padding: 0;
+}*/
+
+.grid-box {
+  height: 70%;
+}
+
+.grid-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center center;
+}
+
+/*Footer*/
+
+footer {
+  font-weight: 400;
+}
+
+.footer-links > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.fa-arrow-alt-circle-up {
+  color: #000;
+  font-size: 20px;
+}
